@@ -8,15 +8,15 @@ import LogInForm from './components/LogInForm'
 class App extends React.Component {
   state = { loggedIn: null }
 
-  // firebase initialisation
+  // firebase initialisation with credentials
   componentWillMount() {
     firebase.initializeApp({
-      apiKey: 'AIzaSyDY4ICPj_-lGIhMBpVp_VGS7jEu79PYtO8',
-      authDomain: 'reactnativeauth-c7967.firebaseapp.com',
-      databaseURL: 'https://reactnativeauth-c7967.firebaseio.com',
-      projectId: 'reactnativeauth-c7967',
-      storageBucket: 'reactnativeauth-c7967.appspot.com',
-      messagingSenderId: '1092620974630',
+      apiKey: 'apikey',
+      authDomain: 'xxx',
+      databaseURL: 'xxx',
+      projectId: 'xx',
+      storageBucket: 'xxx',
+      messagingSenderId: 'xxxx',
     })
 
     firebase.auth().onAuthStateChanged((user) => { // this 'user' will be an object about the user if they're signed in, or return null or undefined if signed out
